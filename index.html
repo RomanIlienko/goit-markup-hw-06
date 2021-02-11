@@ -423,8 +423,8 @@
                         <p class="form-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
                         <div class="form-elements">
                             <label for="email" class="form-label"></label>
-                                <input type="email" name="email" class="form-input" id="email" placeholder="E-mail">
-                            <button type="button" class="form-btn">
+                                <input type="email" name="email" class="form-input" id="email" placeholder="E-mail" required>
+                            <button type="submit" class="form-btn">
                                 Подписаться
                                 <svg class="button-icon" width="24px" height="24px">
                                     <use href="./images/svg/sprite.svg#icon-send"></use>
@@ -445,7 +445,7 @@
                 </svg>
             </button>
             <form class="modal-form">
-                <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+                <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
                 <div class="form-field">
                     <label for="name">Имя</label>
                     <input type="text" name="name" id="name">
@@ -472,8 +472,10 @@
                     <textarea name="Комментарий" id="comment" cols="30" rows="5" placeholder="Введите текст"></textarea>
                 </div>
                     <input type="checkbox" name="agree" id="agree">
+                    <label for="agree">Соглашаюсь с рассылкой и принимаю
+                        <a href="index.html" class="agree-link">Условия договора</a>
+                    </label>
                 <div class="agree-field">
-                    <label for="agree">Соглашаюсь с рассылкой и принимаю Условия договора</label>
                     <button type="submit" class="submit-button">Отправить</button>
                 </div>
             </form>

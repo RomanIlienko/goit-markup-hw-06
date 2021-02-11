@@ -691,7 +691,8 @@ a {
   cursor: pointer;
   border: 0px;
   transition: background-color var(--time) var(--animation-style),
-    color var(--time) var(--animation-style);
+    color var(--time) var(--animation-style),
+    box-shadow var(--time) var(--animation-style);
 }
 
 .portfolio-buttons {
@@ -751,6 +752,10 @@ a {
   margin-right: 30px;
   margin-bottom: 30px;
   outline: 1px solid var(--team-border-clr);
+}
+
+.active-links {
+  transition: box-shadow var(--time) var(--animation-style);
 }
 
 .active-links:hover,
@@ -839,12 +844,15 @@ a {
   margin-right: 12px;
   padding: 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); */
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0.03em;
-  /* transition: box shadow var(--time) var(--animation-style); */
+  transition: box-shadow var(--time) var(--animation-style);
+}
+
+.form-input:focus {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .form-label {
@@ -952,6 +960,8 @@ a {
 
 .modal-close-button {
   position: absolute;
+  display: flex;
+
   right: 8px;
   top: 8px;
 
@@ -978,19 +988,15 @@ a {
 .close-icon {
 }
 
-/* @keyframes modalScale {
-  0% {
-    transform: scale(0);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-} */
-
 /* Modal-form */
 
 .modal-form {
+}
+
+.modal-title {
+  display: inline-block;
+  margin-bottom: 12px;
+  text-align: center;
 }
 
 .form-field {
@@ -1006,6 +1012,17 @@ a {
   width: 448px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  transition: fill var(--time) var(--animation-style),
+    border-color var(--time) var(--animation-style);
+}
+
+.form-field input:hover {
+  border-color: var(--accent-color);
+  cursor: pointer;
+}
+
+.form-field input:focus {
+  border-color: var(--accent-color);
 }
 
 .form-field label {
@@ -1038,12 +1055,6 @@ a {
   position: absolute;
   bottom: 11px;
   left: 12px;
-}
-
-.form-field input:hover {
-  fill: var(--accent-color);
-  border-color: var(--accent-color);
-  cursor: pointer;
 }
 
 .form-field textarea {
@@ -1084,4 +1095,9 @@ a {
 
 .area-field {
   margin-bottom: 20px;
+}
+
+.agree-link {
+  color: var(--accent-color);
+  text-decoration: underline;
 }
