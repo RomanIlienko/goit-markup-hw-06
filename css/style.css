@@ -1003,6 +1003,7 @@ a {
   position: relative;
   display: flex;
   flex-direction: column;
+  margin-right: 0;
   margin-bottom: 10px;
   width: 448px;
 }
@@ -1011,13 +1012,13 @@ a {
   height: 40px;
   width: 448px;
   border-radius: 4px;
+  outline: var(--accent-color);
   border: 1px solid rgba(33, 33, 33, 0.2);
   transition: fill var(--time) var(--animation-style),
     border-color var(--time) var(--animation-style);
 }
 
 .form-field input:hover {
-  border-color: var(--accent-color);
   cursor: pointer;
 }
 
@@ -1034,27 +1035,16 @@ a {
   margin-bottom: 4px;
 }
 
-.agree-field {
-  display: flex;
-  flex-direction: column;
-}
-
-.agree-field label {
-  text-align: center;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-}
-
 .form-field input {
   padding: 12px 42px;
 }
 
 .form-icon {
+  color: var(--accent-color);
   position: absolute;
   bottom: 11px;
   left: 12px;
+  transition: fill var(--time) var(--animation-style);
 }
 
 .form-field textarea {
@@ -1062,24 +1052,29 @@ a {
   width: 448px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: none;
+  transition: outline-color var(--time) var(--animation-style),
+    border-color var(--time) var(--animation-style);
 }
 
 .form-field textarea::placeholder {
-  font-size: 12px;
+  color: rgba(117, 117, 117, 0.5);
+  font-size: 14px;
   font-weight: 400;
   line-height: 14px;
   letter-spacing: 0.01em;
 }
 
 .submit-button {
+  display: flex;
   height: 50px;
   width: 200px;
   border-radius: 4px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 30px;
+  padding: 10px 55px;
 
-  background-color: #2196f3;
+  background-color: var(--accent-color);
   color: var(--second-txt-bcg-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -1100,4 +1095,26 @@ a {
 .agree-link {
   color: var(--accent-color);
   text-decoration: underline;
+}
+
+.modal-form-input:focus + .form-icon {
+  fill: var(--accent-color);
+}
+
+.text-zone:focus {
+  outline-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.checkbox-text {
+  margin-left: 7px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.checkbox-wrapper {
+  text-align: center;
+  margin-bottom: 30px;
 }
