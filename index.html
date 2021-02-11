@@ -369,53 +369,70 @@
     </main>
     <!--Подвал-->
     <footer class="footer">
-        <div class="container footer-main">
-            <div class="footer-content">
-                <a href="./index.html" class="footer-logo"><span class="footer-web-color">Web</span>Studio</a>
-                    <address class="footer-adress">
-                        <p class="physical-adress">г. Киев, пр-т Леси Украинки, 26</p>
-                    </address>
-                <ul class="footer-contacts-list">
-                    <li class="mail-list">
-                        <a href="mailto:info@example.com" class="footer-contacts footer-mail">info@example.com</a>
-                    </li>
-                    <li>
-                        <a href="tel:+380961111111" class="footer-contacts footer-tel">+38 096 111 11 11</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-connection">
-                <h3 class="connection-title">ПРИСОЕДИНЯЙТЕСЬ</h3>
-                <ul class="connection-list">
-                    <li class="connection-items">
-                        <a class="social-links" href="https://www.instagram.com">
-                            <svg class="social-icons" width="20px" height="20px">
-                                <use href="./images/svg/sprite.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="connection-items">
-                        <a class="social-links" href="https://twitter.com/?lang=ru">
-                            <svg class="social-icons" width="20px" height="20px">
-                                <use href="./images/svg/sprite.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="connection-items">
-                        <a class="social-links" href="https://en-gb.facebook.com/">
-                            <svg class="social-icons" width="20px" height="20px">
-                                <use href="./images/svg/sprite.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="connection-items">
-                        <a class="social-links" href="https://www.linkedin.com/">
-                            <svg class="social-icons" width="20px" height="20px">
-                                <use href="./images/svg/sprite.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-content">
+                    <a href="./index.html" class="footer-logo"><span class="footer-web-color">Web</span>Studio</a>
+                        <address class="footer-adress">
+                            <p class="physical-adress">г. Киев, пр-т Леси Украинки, 26</p>
+                        </address>
+                    <ul class="footer-contacts-list">
+                        <li class="mail-list">
+                            <a href="mailto:info@example.com" class="footer-contacts footer-mail">info@example.com</a>
+                        </li>
+                        <li>
+                            <a href="tel:+380961111111" class="footer-contacts footer-tel">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-connection">
+                    <h3 class="connection-title">ПРИСОЕДИНЯЙТЕСЬ</h3>
+                    <ul class="connection-list">
+                        <li class="connection-items">
+                            <a class="social-links" href="https://www.instagram.com">
+                                <svg class="social-icons" width="20px" height="20px">
+                                    <use href="./images/svg/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="connection-items">
+                            <a class="social-links" href="https://twitter.com/?lang=ru">
+                                <svg class="social-icons" width="20px" height="20px">
+                                    <use href="./images/svg/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="connection-items">
+                            <a class="social-links" href="https://en-gb.facebook.com/">
+                                <svg class="social-icons" width="20px" height="20px">
+                                    <use href="./images/svg/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="connection-items">
+                            <a class="social-links" href="https://www.linkedin.com/">
+                                <svg class="social-icons" width="20px" height="20px">
+                                    <use href="./images/svg/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="form-wrapper">
+                    <form class="js-speaker-form">
+                        <p class="form-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+                        <div class="form-elements">
+                            <label for="email" class="form-label"></label>
+                                <input type="email" name="email" class="form-input" id="email" placeholder="E-mail">
+                            <button type="button" class="form-btn">
+                                Подписаться
+                                <svg class="button-icon" width="24px" height="24px">
+                                    <use href="./images/svg/sprite.svg#icon-send"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </footer>
@@ -427,6 +444,39 @@
                     <use href="./images/svg/sprite.svg#icon-close"></use>
                 </svg>
             </button>
+            <form class="modal-form">
+                <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+                <div class="form-field">
+                    <label for="name">Имя</label>
+                    <input type="text" name="name" id="name">
+                    <svg class="form-icon" width="18px" height="18px">
+                        <use href="./images/svg/sprite.svg#icon-person"></use>
+                    </svg>
+                </div>
+                <div class="form-field">
+                    <label for="tel">Телефон</label>
+                    <input type="tel" name="tel" id="tel">
+                    <svg class="form-icon" width="18px" height="18px">
+                        <use href="./images/svg/sprite.svg#icon-blackphone"></use>
+                    </svg>
+                </div>
+                <div class="form-field">
+                    <label for="mail">Почта</label>
+                    <input type="email" name="mail" id="mail">
+                    <svg class="form-icon" width="18px" height="18px">
+                        <use href="./images/svg/sprite.svg#icon-blackmail"></use>
+                    </svg>
+                </div>
+                <div class="form-field area-field">
+                    <label for="comment">Комментарий</label>
+                    <textarea name="Комментарий" id="comment" cols="30" rows="5" placeholder="Введите текст"></textarea>
+                </div>
+                    <input type="checkbox" name="agree" id="agree">
+                <div class="agree-field">
+                    <label for="agree">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                    <button type="submit" class="submit-button">Отправить</button>
+                </div>
+            </form>
         </div>
     </div>
 
