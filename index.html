@@ -423,9 +423,9 @@
                         <p class="form-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
                         <div class="form-elements">
                             <label for="email" class="form-label"></label>
-                                <input type="email" name="email" class="form-input" id="email" placeholder="E-mail" required>
+                            <input type="email" name="email" class="form-input" id="email" placeholder="E-mail" autocomplete="off" required>
                             <button type="submit" class="form-btn">
-                                Подписаться
+                            Подписаться
                                 <svg class="button-icon" width="24px" height="24px">
                                     <use href="./images/svg/sprite.svg#icon-send"></use>
                                 </svg>
@@ -448,21 +448,21 @@
                 <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
                 <div class="form-field">
                     <label for="name">Имя</label>
-                    <input type="text" name="name" id="name" class="modal-form-input">
+                    <input type="text" name="name" id="name" class="modal-form-input" autocomplete="off">
                     <svg class="form-icon" width="18px" height="18px">
                         <use href="./images/svg/sprite.svg#icon-person"></use>
                     </svg>
                 </div>
                 <div class="form-field">
                     <label for="tel">Телефон</label>
-                    <input type="tel" name="tel" id="tel" class="modal-form-input" autocomplete="tel">
+                    <input type="tel" name="tel" id="tel" class="modal-form-input" autocomplete="off">
                     <svg class="form-icon" width="18px" height="18px">
                         <use href="./images/svg/sprite.svg#icon-blackphone"></use>
                     </svg>
                 </div>
                 <div class="form-field">
                     <label for="mail">Почта</label>
-                    <input type="email" name="mail" id="mail" class="modal-form-input">
+                    <input type="email" name="mail" id="mail" class="modal-form-input" autocomplete="off">
                     <svg class="form-icon" width="18px" height="18px">
                         <use href="./images/svg/sprite.svg#icon-blackmail"></use>
                     </svg>
@@ -472,9 +472,12 @@
                     <textarea name="Комментарий" id="comment" cols="30" rows="5" placeholder="Введите текст" class="text-zone"></textarea>
                 </div>
                 <div class="checkbox-wrapper">
-                    <input type="checkbox" name="agree" id="agree">
-                    <label for="agree" class="checkbox-text">Соглашаюсь с рассылкой и принимаю
+                    <label class="checkbox-text">Соглашаюсь с рассылкой и принимаю
                         <a href="index.html" class="agree-link">Условия договора</a>
+                        <input type="checkbox" name="agree" class="form-checkbox">
+                        <svg class="custom-checkbox" width="16px" height="15px">
+                            <use href="./images/svg/sprite.svg#icon-checkbox"></use>
+                        </svg>
                     </label>
                 </div>
                 <button type="submit" class="submit-button">Отправить</button>
